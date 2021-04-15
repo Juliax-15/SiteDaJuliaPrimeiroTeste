@@ -1,0 +1,118 @@
+ body{ 
+    background-color: #D8BFD8; 
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+    }
+
+    .container{
+      width: 80%
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+   header, footer {
+     background-color: rgba(255,105,180,0.6);
+     padding: 2%
+     
+    }
+
+    .titulo{
+      text-align: center;
+       margin-top:2%
+    margin-bottom:2%
+
+    }
+
+    h1{
+    text-align: center;
+    font-size: 35px
+    
+    }
+
+    h2{
+     text-align: center;
+    text-decoration: underline;
+    font-size: 30px
+     
+    }
+
+    figure{
+       text-align: center;
+      width:20px 
+      height: 20px;
+    }
+
+     p{ 
+      text-align:justify; 
+        font-size: 20px
+       
+
+      }
+
+      ul li{
+      text-decoration: underline;
+      color: #191970;
+      font-weight:bolder; 
+        margin-top:2%
+    margin-bottom:2%
+
+
+      }
+      a:link {
+  color: blue;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: gray;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: purple;
+  background-color: transparent;
+  text-decoration: underline;
+}
+ol li { font-weight:bolder;
+  font-size: 20px
+   }
+
+table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        widows: 100%;
+        font-size: 20px
+        font-weight: bolder;
+        width: 100%
+}
+td{
+  text-align: center;
+}
+
+th {
+  font-size: 25px
+}
+
+.tabela{
+  text-align: center;
+  border: 1px solid
+  padding: 10px;
+}
+
+tr:nth-child(even) {
+  background-color: #BA55D3
+}
+  
+  .centro{
+      text-align: center;
+  }
