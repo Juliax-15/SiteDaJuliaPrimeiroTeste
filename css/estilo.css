@@ -1,3 +1,6 @@
+   
+
+
  body{ 
     background-color: #D8BFD8; 
     width: 80%;
@@ -6,29 +9,98 @@
 
     }
 
-    .container{
-      width: 80%
-      margin-left: auto;
-      margin-right: auto;
+    html{
+      scroll-behavior: smooth;
     }
 
-   header, footer {
-     background-color: rgba(255,105,180,0.6);
-     padding: 2%;
-     width: 105%;
+      header, footer {
+     background-color: rgba(255, 128, 191);
+     padding: 1%;
+      
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5em;
+    line-height: 1.5;
+    
+    }
+
+    .menu-opcoes{
+      text-align: center;
+      position: absolute;
+      right: 5%;
+      top: 45%;
+    }
+
+    .menu-opcoes ul li{
+      display: inline;
+      margin-left: 15px
+    }
+
+     .ajustes{
+      line-height: 1;
+      text-align: center;
+    }
+
+    .fixo{
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: 1030;
+    }
+
+    .rodapé{
+      position: 
+        bottom: 0;
+      right: 0;
+      left: 0;
     }
 
     .titulo{
       text-align: center;
-       
-
     }
+
+    .container{
+     
+      width: 80%
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+    }
+
+ /* tela menor que 599px  */
+@media screen and (max-width: 599px){ 
+.container { margin-top: 95%;
+            }}
+/* tela maior que 600px  */
+@media screen and (min-width: 600px) {
+  .container{ margin-top: 40%
+}}
+/* telas maiores que 768px */
+@media screen and (min-width: 768px) {
+  .container{ margin-top: 20%
+}    
+  header {
+     background-color: rgba(255, 128, 191);
+     flex-direction: row;
+     position: relative;
+      
+  }
+
+}
+
+
+
+
 
     h1{
     text-align: center;
     font-size: 2em;
     margin-top: 2%;
     margin-bottom: 2%;
+    font-family: arial narrow; 
     }
 
     h2{
@@ -36,7 +108,8 @@
     text-decoration: underline;
     font-size: 1.5em;
      margin-top: 2%;
-    margin-bottom: 2%; 
+    margin-bottom: 2%;
+    font-family: arial narrow;  
     }
 
     figure{
@@ -44,21 +117,40 @@
       
     }
 
+    img{
+
+     width: 100%;
+  max-width: 400px;
+  height: auto;
+    }
+
+    .logo{
+     width: 100%;
+     max-width: 270px;
+     height:auto;
+
+    }
+
+    .imgtexto{
+      width: 30%
+    }
+
      p{ 
       text-align:justify; 
-        font-size: 1.3em;
+        font-size: 1em;
         margin-top: 1.5%;
     margin-bottom: 1.5%;
-
+       font-family: arial narrow; 
       }
 
-      ul li{
+      .listastexto{
       text-decoration: underline;
       color: #191970;
       font-weight:bolder; 
        margin-top: 1.2%;
       margin-bottom: 1.2%;
        font-size: 1em;
+       font-size: 19px
       }
       a:link {
   color: blue;
