@@ -26,18 +26,7 @@
     
     }
 
-    .menu-opcoes{
-      text-align: center;
-      position: absolute;
-      right: 5%;
-      top: 45%;
-    }
-
-    .menu-opcoes ul li{
-      display: inline;
-      margin-left: 15px
-    }
-
+    
      .ajustes{
       line-height: 1;
       text-align: center;
@@ -62,74 +51,10 @@
       text-align: center;
     }
 
-    .container{
-     
-      width: 80%
-      margin-left: auto;
-      margin-right: auto;
-      position: relative;
-    }
+    
 
- /* tela menor que 599px  */
-@media screen and (max-width: 599px){ 
-.container { margin-top: 95%;
-            }}
-/* tela maior que 600px  */
-@media screen and (min-width: 600px) {
-  .container{ margin-top: 40%
-}}
-/* telas maiores que 768px */
-@media screen and (min-width: 768px) {
-  .container{ margin-top: 20%
-}    
-  header {
-     background-color: rgba(255, 128, 191);
-     flex-direction: row;
-     position: relative;
-      
-  }
-
-}
-
-
-
-
-
-    h1{
-    text-align: center;
-    font-size: 2em;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    font-family: arial narrow; 
-    }
-
-    h2{
-     text-align: center;
-    text-decoration: underline;
-    font-size: 1.5em;
-     margin-top: 2%;
-    margin-bottom: 2%;
-    font-family: arial narrow;  
-    }
-
-    figure{
-       text-align: center;
-      
-    }
-
-    img{
-
-     width: 100%;
-  max-width: 400px;
-  height: auto;
-    }
-
-    .logo{
-     width: 100%;
-     max-width: 270px;
-     height:auto;
-
-    }
+    
+    
 
     .imgtexto{
       width: 30%
@@ -145,7 +70,7 @@
 
       .listastexto{
       text-decoration: underline;
-      color: #191970;
+      color: #BA55D3;
       font-weight:bolder; 
        margin-top: 1.2%;
       margin-bottom: 1.2%;
@@ -159,7 +84,7 @@
 }
 
 a:visited {
-  color: gray;
+  color: #BA55D3;
   background-color: transparent;
   text-decoration: none;
 }
@@ -198,6 +123,66 @@ th {
   font-size: 25px
 }
 
+.container{
+     
+      width: 80%
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+    }
+
+#sobre{
+   display: flex;
+   flex-direction: column; 
+   align-items: center;
+   position: relative;
+   margin: 0 auto;
+ }
+#sobre .sobre{
+  text-align: center;
+  margin-left: 65 px;
+}
+
+#galeria{
+  display: flex;
+   flex-direction: column; 
+   align-items: center;
+   position: relative;
+   margin: 3px 3px;
+}
+
+#galeria .galeria{
+  margin: 3px 3px;
+  text-align: center;
+}
+
+
+.imggaleria{
+  width: 80%;
+  height:20%;
+  border-radius: 30px;
+  box-shadow: 10px 10px black;
+  align-items: center;
+  transition: width 2s, linear 1s;
+}
+
+.imggaleria:hover{ 
+  width: 100px;
+  height: 100px;
+  }
+
+.imgsobre{
+   width:20%; 
+   height:20%;
+   align-items: center;
+   transition: width 2s, height 2s, transform 2s;}
+
+.imgsobre:hover{ 
+  width: 100px;
+  height: 100px;
+  transform: rotate(360deg); }
+
+
 .tabela{
   text-align: center;
   border: 1px solid
@@ -211,3 +196,136 @@ tr:nth-child(even) {
   .centro{
       text-align: center;
   }
+
+  .fundo{
+    background-color: #E6E6FA;
+    width: 80%;
+    margin-left: auto;
+    margin-right:auto;
+    padding: 3%;
+    font-size: 1.2em;
+  }
+
+  .distancia{
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+input[type=text], select, textarea {
+  width: 100%;
+       padding: 12px 20px;
+       display: block;
+       border: 1px solid #ccc;
+       border-radius: 5px;
+       box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: rgba(255, 128, 191);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+fieldset {
+  width: 80%;
+  border: 1px solid #ccc
+  padding:2%;
+}
+
+   /*tela menor que 599px */
+@media screen and (max-width: 599px){ 
+.container { margin-top: 95%;
+            }}
+/* tela maior que 600px  */
+@media screen and (min-width: 600px) {
+  .container{ margin-top: 40%
+}}
+/* telas maiores que 768px */
+@media screen and (min-width: 768px) {
+  .container{ margin-top: 20%
+}    
+  header {
+     background-color: rgba(255, 128, 191);
+     flex-direction: row;
+     position: relative;
+      
+  }
+
+  .menu-opcoes{
+      position: absolute;
+      text-align: center;
+      right: 5%;
+      top: 45%;
+    }
+
+    .menu-opcoes ul li{
+      display: inline;
+      margin-left: 15px
+    }
+
+
+}
+ h1{
+    text-align: center;
+    font-size: 2em;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-family: arial narrow; 
+    }
+
+    h2{
+     text-align: center;
+    text-decoration: underline;
+    font-size: 1.5em;
+     margin-top: 2%;
+    margin-bottom: 2%;
+    font-family: arial narrow;  
+    }
+
+    h3{
+      text-align: center;
+      font-size: 1.2em
+      margin-top:2%;
+      margin-bottom: 2%;
+      font-family: arial narrow;
+      color: #BA55D3;
+    }
+
+    figure{
+       text-align: center;
+      
+    }
+  img{
+
+     width: 100%;
+  max-width: 400px;
+  height: auto;
+    }
+
+   .logo{
+     width: 100%;
+     max-width: 270px;
+     height:auto;
+
+    }
+  }
+ #sobre, #galeria{
+    flex-direction: row;
+    flex-wrap: wrap;
+ }
+
+  #sobre h1,h3, p, #galeria{
+    width:100%;
+    text-align: center;
+}
+#sobre .sobre{
+   width: 25%;
+   text-align: center;}
+
+
+
+   }

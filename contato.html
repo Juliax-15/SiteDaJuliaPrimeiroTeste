@@ -16,18 +16,88 @@
      <nav class="menu-opcoes">
      <ul class="ajustes">
        <li><a href="index.html"> Inicio </a> </li>
-       <li><a href="index.html#html"> HTML </a> </li>
+       <li><a href="index.html"> Sobre </a> </li>
+       <li><a href="index.html#sobre"> HTML </a> </li>
        <li><a href="index.html#W3C"> W3C </a></li>
-       <li><a href="posicionamento.html"> Posicionamento </a></li>
-       <li><a href="JavaScript.html"> JavaScript </a></li>
-       <li><a href="contato.html"> Contato </a></li>
        <li><a href="index.html#CSS"> CSS </a></li>
-     </ul>
+       <li><a href="index.html#galeria"> Galeria </a> </li>
+       <li><a href="JavaScript.html"> JavaScript </a></li>
+       <li><a href="posicionamento.html"> Posicionamento </a></li>
+       <li><a href="contato.html"> Contato </a></li>
+       </ul>
      </nav>
 
   </header>
 	<div class="container">
-		
+    <h1 class="titulo">Formulário de Contato</h1>
+
+    <p class="centro">Entre em contato para sanar suas dúvidas ou sugestões.</p>
+    <div class="fundo">
+        <form>
+          <div class="distancia">
+             <input type="text" placeholder= "Primeiro Nome">
+           </div>
+
+           <div class="distancia">
+             <input type="text" placeholder= "Segundo Nome">
+           </div>
+
+           <div class="distancia">
+             <input type="text" placeholder= "Idade">
+           </div>
+
+           <div class="distancia">
+             <label for="cars">Etnia:</label>
+              <select id="cars" name="cars">
+                <option value="------">------</option>
+                <option value="Branco">Branco</option>
+                <option value="Amarelo">Amarelo</option>
+                <option value="Pardo">Pardo</option>
+                <option value="Indígena">Indígena</option>
+                <option value="Preto">Preto</option>
+              </select>
+           </div>
+
+           <div class="distancia">
+                <fieldset>
+                     <legend>Gênero</legend>
+                 <input type="radio" id="male" name="gender" value="male">
+                   <label for="male">Masculino</label><br>
+                 <input type="radio" id="female" name="gender" value="female">
+                   <label for="female">Feminino</label><br>
+                 <input type="radio" id="other" name="gender" value="other">
+                   <label for="other">Outro</label>
+               </fieldset>
+           </div>
+
+           <div class="distancia">
+                 <fieldset>
+                        <legend>O que você achou do site?</legend>
+                   <input type="checkbox" id="male" name="gender" value="male">
+                     <label for="male">Muito mal trabalhado</label><br>
+                   <input type="checkbox" id="female" name="gender" value="female">
+                     <label for="female">Não gostei</label><br>
+                   <input type="checkbox" id="other" name="gender" value="other">
+                     <label for="other">Indiferente</label><br>
+                   <input type="checkbox" id="other" name="gender" value="other">
+                     <label for="other">Achei interessante</label><br>
+                   <input type="checkbox" id="other" name="gender" value="other">
+                     <label for="other">Gostei muito e recomendaria</label><br>
+               </fieldset>
+           </div>
+
+           <div class="distancia">
+             <label for="cars">Sugestão ou dúvida</label>
+              <textarea name="message" style="width:100%; height:300px">Digite o seu texto</textarea>
+           </div>
+
+           <div>
+             <input type="submit" name="Submit">
+          </div>
+        </form>
+    </div>
+
+	</div>
      <footer><p class="centro">Rodapé</p></footer>
 </body>
 </html>
